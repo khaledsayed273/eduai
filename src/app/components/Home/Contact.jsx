@@ -32,7 +32,7 @@ function Contact() {
                     <label className='mb-3 capitalize  md:text-2xl cursor-pointer ' htmlFor="message">message</label>
                     <textarea className='bg-[#ddd8d8] w-full p-2  rounded-md outline-blue min-h-[200px] max-h-[200px]' name="message" id="message"></textarea>
                 </div>
-                <button className='bg-blue text-white mx-auto block mt-10 rounded-lg md:text-2xl capitalize hover:opacity-80 py-2 md:py-4 px-14'>send</button>
+                <button className='bg-blue text-white mx-auto block mt-10 rounded-lg md:text-2xl capitalize hover:opacity-80 font-medium py-2 md:py-4 px-14'>send</button>
             </form>
         </div>
     )
