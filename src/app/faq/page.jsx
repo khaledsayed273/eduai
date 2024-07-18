@@ -65,11 +65,11 @@ function Page() {
                         <Image src={img} fill alt='faq' />
                     </div>
                     <div >
-                        <h1 className="text-3xl font-bold mb-8 relative">FAQ</h1>
+                        <h1 className="text-3xl font-medium md:font-semibold mb-8 relative">FAQ</h1>
                         {faqs.map((faq, index) => (
                             <div key={index} className="border-b py-4">
                                 <div className="flex justify-between items-center cursor-pointer select-none" onClick={() => toggleFaq(index)}>
-                                    <h3 className="text-lg font-medium">{faq.question}</h3>
+                                    <h3 className="md:text-lg md:font-medium">{faq.question}</h3>
                                     {openFaq === index ? (
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-6 text-blue">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14" />
@@ -80,7 +80,7 @@ function Page() {
                                         </svg>
                                     )}
                                 </div>
-                                {openFaq === index && <p className="mt-3 text-gray">{faq.answer}</p>}
+                                {openFaq === index && <p className="mt-3 text-sm md:text-base text-gray">{faq.answer}</p>}
                             </div>
                         ))}
                     </div>

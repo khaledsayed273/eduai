@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import logo from "../../../public/logo.png"
+import logo from "../../../public/footerLogo.png"
 import Link from 'next/link'
 import FooterSocialMedia from './FooterSocialMedia'
 
@@ -13,22 +13,22 @@ function Footer() {
           <Image sizes="(min-width: 808px) 50vw, 100vw" fill src={logo} alt='logo' />
         </Link>
           <ul className='capitalize xl:col-span-2'>
-            <h3 className='text-lg md:text-xl font-bold mb-5'>Help & Information :</h3>
-            <li className='my-4'><Link className='md:text-lg hover:underline' href={"/terms"}>terms of service</Link></li>
-            <li className='my-4'><Link className='md:text-lg hover:underline' href={"/policy"}>privacy policy</Link></li>
-            <li className='my-4'><Link className='md:text-lg hover:underline' href={"/support"}>support</Link></li>
-            <li className='my-4'><Link className='md:text-lg hover:underline' href={"/faq"}>faq</Link></li>
+            <h3 className='text-lg md:text-xl font-medium md:font-semibold mb-5'>Help & Information :</h3>
+            <li className='my-4'><Link className='text-sm md:text-lg hover:underline' href={"/terms"}>terms of service</Link></li>
+            <li className='my-4'><Link className='text-sm md:text-lg hover:underline' href={"/policy"}>privacy policy</Link></li>
+            <li className='my-4'><Link className='text-sm md:text-lg hover:underline' href={"/support"}>support</Link></li>
+            <li className='my-4'><Link className='text-sm md:text-lg hover:underline' href={"/faq"}>faq</Link></li>
           </ul>
           <ul className='capitalize xl:col-span-2'>
-            <h3 className='text-lg md:text-xl font-bold mb-5'>Contact Information :</h3>
-            <li className='my-4 md:text-lg'>support@eduaisystem.com</li>
-            <li className='my-4 md:text-lg'>+123-456-7890</li>
-            <li className='my-4 md:text-lg'>123 Education Lane, Knowledge City, Country</li>
+            <h3 className='text-lg md:text-xl font-medium md:font-semibold mb-5'>Contact Information :</h3>
+            <li className='my-4 text-sm md:text-lg'>support@eduaisystem.com</li>
+            <li className='my-4 text-sm md:text-lg'>+123-456-7890</li>
+            <li className='my-4 text-sm md:text-lg'>123 Education Lane, Knowledge City, Country</li>
           </ul>
           <FooterSocialMedia/>
 
         </div>
-        <span className='mt-10 inline-block text-sm font-bold'>Copyrights © 2024, EDUAI - All Rights Reserved</span>
+        <span className='mt-10 inline-block text-sm font-medium md:font-semibold'>Copyrights © 2024, EDUAI - All Rights Reserved</span>
       </div>
     </footer>
   )

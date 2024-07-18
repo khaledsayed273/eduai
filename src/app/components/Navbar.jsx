@@ -65,7 +65,7 @@ function Navbar() {
                     <ul className={`flex transition-all z-40 duration-300 flex-col items-center justify-center md:items-start md:justify-end  md:flex-row bg-white md:bg-transparent w-full ${showNav ? "left-0" : "left-full"}  h-[100vh] md:h-auto top-0 absolute md:static`}>
                         {ul.map((item, index) => (
                             <li onClick={() => setShowNav(!showNav)} className='md:ms-7 mb-16 md:mb-0' key={index}>
-                                <Link className={`${pathName === item.href ? "text-blue" : "text-black"} capitalize hover:text-blue md:text-lg lg:text-2xl font-medium`} href={`${item.href}`}>{item.name}</Link>
+                                <Link className={`${pathName === item.href ? "text-blue" : "text-black"} capitalize hover:text-blue text-sm md:text-lg lg:text-2xl font-medium`} href={`${item.href}`}>{item.name}</Link>
                             </li>
                         ))}
                     </ul>

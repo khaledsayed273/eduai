@@ -3,14 +3,14 @@ import React from 'react'
 function ContactUs() {
     return (
         <div id='contact-us' className='mt-10'>
-            <h3 className='capitalize mb-4 font-semibold lg:text-2xl'>contact us</h3>
-            <p className='xl:text-xl font-medium xl:leading-8 my-4'><span className='font-semibold'>Email: </span>
+            <h3 className='capitalize mb-4 font-medium md:font-semibold lg:text-2xl'>contact us</h3>
+            <p className='text-sm lg:text-xl md:font-medium xl:leading-8 my-4'><span className='font-medium md:font-semibold'>Email: </span>
                 support@eduaisystem.com
             </p>
-            <p className='xl:text-xl font-medium xl:leading-8 my-4'><span className='font-semibold'>Phone: </span>
+            <p className='text-sm lg:text-xl md:font-medium xl:leading-8 my-4'><span className='font-medium md:font-semibold'>Phone: </span>
                 +123-456-7890
             </p>
-            <p className='xl:text-xl font-medium xl:leading-8 my-4'><span className='font-semibold'>Address: </span>
+            <p className='text-sm lg:text-xl md:font-medium xl:leading-8 my-4'><span className='font-medium md:font-semibold'>Address: </span>
                 123 Education Lane, Knowledge City, Country
             </p>
         </div>

@@ -34,18 +34,18 @@ function OverView() {
     ]
 
     return (
-        <section id='overview' className='my-10'>
+        <section className='my-10'>
             <div className='flex items-center justify-center'>
                 <Image width={90} height={90} src={crystallLeft} alt='crystallLeft' />
-                <h3 className='font-semibold text-xl md:text-4xl mx-5'>Project Overview</h3>
+                <h3 className='font-medium lg:font-semibold text-lg md:text-4xl mx-5'>Project Overview</h3>
                 <Image width={90} height={90} src={crystallRight} alt='crystallRight' />
             </div>
-            <p className='text-center leading-7  md:text-lg lg:leading-10 lg:text-2xl xl:leading-10 xl:text-3xl text-gray my-7 font-medium'>Introducing a suite of integrated applications designed to enhance the educational experience and communication among all stakeholders:</p>
+            <p className='text-center leading-7  md:text-lg lg:leading-10 lg:text-2xl xl:leading-10 xl:text-3xl text-gray my-7  md:font-medium'>Introducing a suite of integrated applications designed to enhance the educational experience and communication among all stakeholders:</p>
             <div className='md:my-16'>
                 {data.map((item, index) => (
                     <div className='my-10 md:my-16 2xl:my-24 grid lg:grid-cols-2  gap-7 items-center' key={item.id}>
                         <div className={` ${index % 2 === 0 ? '' : 'lg:order-2'}`}>
-                            <span className='text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-semibold lg:leading-9 xl:leading-[50px] 2xl:leading-[50px]'>{item.title}: <span className='text-gray font-medium'>{item.description}</span></span>
+                            <span className='md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-medium lg:font-semibold lg:leading-9 xl:leading-[50px] 2xl:leading-[50px]'>{item.title}: <span className='text-gray font-normal md:font-medium'>{item.description}</span></span>
                         </div>
                         <div className='h-[260px] sm:h-auto '>
                             <VideoComponent src={item.video} />

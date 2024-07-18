@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-const inter = Roboto({ subsets: ["latin"], weight: ["400", "500"] });
+const roboto = Roboto({ subsets: ["latin"], weight: ["400", "500"] });
 
 export const metadata = {
   title: "EDUAI",
@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <Navbar />
         {children}
         <Footer />
