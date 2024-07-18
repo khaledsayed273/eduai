@@ -53,7 +53,8 @@ function Navbar() {
     useEffect(() => {
         checkToHiddenScroll()
 
-    }, [checkToHiddenScroll, showNav])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [ showNav])
 
     return (
         <nav>
