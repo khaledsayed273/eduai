@@ -42,10 +42,10 @@ function Aside() {
             <Image alt='background' className='-bottom-7 xl:-bottom-16  h-[200px] absolute -z-10' src={background} />
             <div className='flex items-center justify-center'>
                 <Image width={90} height={90} src={crystallLeft} alt='crystallLeft' />
-                <h3 className='font-medium lg:font-semibold text-lg md:text-4xl '>Choose your plan</h3>
+                <h3 className='text-dark font-medium lg:font-semibold text-lg md:text-4xl '>Choose your plan</h3>
                 <Image width={90} height={90} src={crystallRight} alt='crystallRight' />
             </div>
-            <p className='text-center leading-7 md:text-lg lg:leading-10 lg:text-2xl xl:leading-10 xl:text-3xl text-gray my-7 md:font-medium'>Choose your plan and enjoy all the features you need for an exceptional educational experience for your children.</p>
+            <p className='text-center leading-7 md:text-lg lg:leading-10 lg:text-2xl xl:leading-10 xl:text-3xl text-dark/80 my-7 md:font-medium'>Choose your plan and enjoy all the features you need for an exceptional educational experience for your children.</p>
             <div className='grid md:grid-cols-2 lg:grid-cols-3 mt-16 gap-7 lg:gap-10 xl:gap-20'>
                 {data.map(item => (
                     <Link href={"/"} className='hover:scale-95 transition-all duration-300 py-8 px-5 rounded-xl bg-white shadow-[0_0px_50px_-5px_rgba(0,40,100,0.25)]' key={item.id}>

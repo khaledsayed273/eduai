@@ -53,7 +53,7 @@ function Navbar() {
     useEffect(() => {
         checkToHiddenScroll()
 
-    }, [showNav])
+    }, [checkToHiddenScroll, showNav])
 
     return (
         <nav>
