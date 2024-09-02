@@ -18,6 +18,7 @@ function Footer() {
             <li className='my-4'><Link className='text-sm md:text-lg hover:underline' href={"/policy"}>privacy policy</Link></li>
             <li className='my-4'><Link className='text-sm md:text-lg hover:underline' href={"/support"}>support</Link></li>
             <li className='my-4'><Link className='text-sm md:text-lg hover:underline' href={"/faq"}>faq</Link></li>
+            <li className='my-4'><Link className='text-sm md:text-lg hover:underline' href={"/deletion"}>deletion</Link></li>
           </ul>
           <ul className='capitalize xl:col-span-2'>
             <h3 className='text-lg md:text-xl font-medium md:font-semibold mb-5'>Contact Information :</h3>
