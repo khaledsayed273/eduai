@@ -38,11 +38,11 @@ function Aside() {
     ]
 
     return (
-        <aside className='md:mt-28 relative'>
+        <aside id='pricePlans' className='md:mt-28 relative'>
             <Image alt='background' className='-bottom-7 xl:-bottom-16  h-[200px] absolute -z-10' src={background} />
             <div className='flex items-center justify-center'>
                 <Image width={90} height={90} src={crystallLeft} alt='crystallLeft' />
-                <h3 className='text-dark font-medium lg:font-semibold text-lg md:text-4xl '>Choose your plan</h3>
+                <h3 className='text-dark font-medium lg:font-semibold text-lg md:text-xl lg:text-4xl '>Choose your plan</h3>
                 <Image width={90} height={90} src={crystallRight} alt='crystallRight' />
             </div>
             <p className='text-center leading-7 md:text-lg lg:leading-10 lg:text-2xl xl:leading-10 xl:text-3xl text-dark/80 my-7 md:font-medium'>Choose your plan and enjoy all the features you need for an exceptional educational experience for your children.</p>

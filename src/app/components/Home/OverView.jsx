@@ -34,10 +34,10 @@ function OverView() {
     ]
 
     return (
-        <section className='my-10'>
+        <section id='overview' className='my-10'>
             <div className='flex items-center justify-center'>
                 <Image width={90} height={90} src={crystallLeft} alt='crystallLeft' />
-                <h3 className='text-dark font-medium lg:font-semibold text-lg md:text-4xl mx-5'>Project Overview</h3>
+                <h3 className='text-dark font-medium lg:font-semibold text-lg md:text-xl lg:text-4xl mx-5'>Project Overview</h3>
                 <Image width={90} height={90} src={crystallRight} alt='crystallRight' />
             </div>
             <p className='text-center leading-7  md:text-lg lg:leading-10 lg:text-2xl xl:leading-10 xl:text-3xl text-dark/80 my-7  md:font-medium'>Introducing a suite of integrated applications designed to enhance the educational experience and communication among all stakeholders:</p>

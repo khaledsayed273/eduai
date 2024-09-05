@@ -22,14 +22,14 @@ function Footer() {
           </ul>
           <ul className='capitalize xl:col-span-2'>
             <h3 className='text-lg md:text-xl font-medium md:font-semibold mb-5'>Contact Information :</h3>
-            <li className='my-4 text-sm md:text-lg'>support@eduaisystem.com</li>
-            <li className='my-4 text-sm md:text-lg'>+123-456-7890</li>
-            <li className='my-4 text-sm md:text-lg'>123 Education Lane, Knowledge City, Country</li>
+            <li className='my-4 text-sm md:text-lg'>contact@eduai.tech</li>
+            <li className='my-4 text-sm md:text-lg'>+212657396706</li>
+            <li className='my-4 text-sm md:text-lg'>Mezanine block B Office n° 4 BOROUJ 16 Avenue des Far N° 873 Tétouan, Morocco</li>
           </ul>
           <FooterSocialMedia/>
 
         </div>
-        <span className='mt-10 inline-block text-sm font-medium md:font-semibold'>Copyrights © 2024, EDUAI - All Rights Reserved</span>
+        <span className='mt-10 block text-center text-sm font-medium md:font-semibold'>Copyrights © 2024, EDUAI - All Rights Reserved</span>
       </div>
     </footer>
   )

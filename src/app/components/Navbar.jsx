@@ -16,16 +16,20 @@ function Navbar() {
             href: "/"
         },
         {
-            name: "privacy policy",
-            href: "/policy"
+            name: "about us",
+            href: "/#about"
         },
         {
-            name: "terms of service",
-            href: "/terms"
+            name: "overview",
+            href: "/#overview"
         },
         {
-            name: "faq",
-            href: "/faq"
+            name: "price plans",
+            href: "/#pricePlans"
+        },
+        {
+            name: "Demo",
+            href: "/#demo"
         },
         {
             name: "Contact us",
@@ -58,15 +62,15 @@ function Navbar() {
 
     return (
         <nav>
-            <div className="container mx-auto py-4 md:py-5 px-2 md:px-5">
+            <div className="container mx-auto py-6 md:py-8 px-2 md:px-5">
                 <div className='flex justify-between items-center'>
-                    <Link className='hover:scale-110 transition-all duration-300' href={"/"}>
-                        <Image sizes="(min-width: 808px) 50vw, 100vw" width={60} height={60} src={logo} alt='logo' />
+                    <Link className='hover:scale-110 transition-all duration-300 w-[100px] md:w-[120px] lg:w-[140px] h-[30px] relative' href={"/"}>
+                        <Image sizes="(min-width: 808px) 50vw, 100vw" fill   src={logo} alt='logo' />
                     </Link>
                     <ul className={`flex transition-all z-40 duration-300 flex-col items-center justify-center md:items-start md:justify-end  md:flex-row bg-white md:bg-transparent w-full ${showNav ? "left-0" : "left-full"}  h-[100vh] md:h-auto top-0 absolute md:static`}>
                         {ul.map((item, index) => (
                             <li onClick={() => setShowNav(!showNav)} className='md:ms-7 mb-16 md:mb-0' key={index}>
-                                <Link className={`${pathName === item.href ? "text-blue" : "text-black"} capitalize hover:text-blue text-sm md:text-lg lg:text-2xl font-medium`} href={`${item.href}`}>{item.name}</Link>
+                                <Link className={`${pathName === item.href ? "text-blue" : "text-black"} capitalize hover:text-blue text-sm lg:text-lg xl:text-2xl font-medium`} href={`${item.href}`}>{item.name}</Link>
                             </li>
                         ))}
                     </ul>

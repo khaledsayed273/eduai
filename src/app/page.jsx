@@ -1,6 +1,7 @@
 import About from "./components/Home/About";
 import Aside from "./components/Home/Aside";
 import Contact from "./components/Home/Contact";
+import Demo from "./components/Home/Demo";
 import Header from "./components/Home/Header";
 import OverView from "./components/Home/OverView";
 
@@ -12,6 +13,7 @@ export default function Home() {
         <About />
         <OverView />
         <Aside />
+        <Demo />
         <Contact />
       </div>
     </main>
